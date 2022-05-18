@@ -69,15 +69,17 @@
           </ul>
 
           <form class="card p-2">
+            <label for="promoCode" class="form-label">Promo code</label>
             <div class="input-group">
-                <label for="promoCode" class="form-label">Promo code</label>
               <input type="text" class="form-control">
               <button type="submit" class="btn btn-secondary">Redeem</button>
             </div>
           </form>
         </div>
         <div class="col-md-7 col-lg-8">
-          <h4 class="mb-3">Billing address</h4>
+            <fieldset>
+                <legend class="mb-3"><b>Billing address</b></legend>
+                
           <form class="needs-validation" novalidate>
             <div class="row g-3">
               <div class="col-sm-6">
@@ -173,8 +175,12 @@
             </div>
 
             <hr class="my-4">
-
-            <h4 class="mb-3">Payment</h4>
+            </fieldset>
+          
+            <fieldset>
+                <legend class="mb-3">
+                    <b>Payment</b>
+                </legend>
 
             <div class="my-3">
               <div class="form-check">
@@ -230,6 +236,8 @@
 
             <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
           </form>
+            </fieldset>
+            
         </div>
       </div>
     </main>
